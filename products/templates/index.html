@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Products</h1>
+  <!-- h1 tag para formato de título -->
+  <div class="row">
+    {% for product in products %}
+      <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="{{ product.image_url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">R${{ product.price }}</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+      </div>
+    {% endfor %}
+  </div>
+  <!--
+  <ul>
+   ul tag para apresentar lista de itens.
+      {% for product in products %}
+       template tag que roda código dinâmico (for, while, if). acessamos o
+       dicionário através da palavra-chave products, output da função view index.
+          <li>{{ product.name }} (R${{ product.price }})</li>
+           li tag para cada item da lista.
+           Django sempre renderiza o conteúdo de {{ . }} no HTML.
+      {% endfor %}
+  </ul>
+-->  
+{% endblock %}
+
+<!-- atalhos (h1 + Tab), (div.row + Tab), (div.col + Tab) (Code + Reformat Code) -->
+
