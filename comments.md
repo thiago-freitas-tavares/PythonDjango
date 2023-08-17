@@ -128,18 +128,18 @@ ctrl+shift+P -> Change Language Mode -> HTML (caso atalhos não estejam funciona
 06. `getbootstrap.com`: Docs -> Quick Start 2 -> copy code (código CSS e JavaScript pronto para produção via CDN).
 CDN (Content Delivery Network) é uma maneira de enviar conteúdo massivo para usuários sem ter problemas com desempenho.
 07. `products\templates`: Botão Direito + New + File (base.html) -> paste code. (template básico com formatações para todas as páginas da nossa aplicação).
-08. `templates\base.html`: o conteúdo de <body> tag é o que o usuário visualiza na página. substituímos o <h1> tag Hello, world! por um template tag com um bloco chamado content.
+08. `templates\base.html`: o conteúdo de [body] tag é o que o usuário visualiza na página. substituímos o [h1] tag Hello, world! por um template tag com um bloco chamado content.
 09. `templates\index.html`: utilizamos o template tag extends para estendermos o template base.html e podermos utilizar suas formatações definidas. além disso, o block content do template base.html será preenchido com o código definido aqui.
 10. `getbootstrap.com`: Docs -> Components (Card) -> Example HTML -> copy code.
-11. `templates\index.html`: substituiremos <ul> e <li> por <div> para exibirmos os produtos em cards com imagens ao invés de bullet points.
-- entre <h1> e <ul> inserir (div.row + TAB), que cria uma classe chamada row (linha). dentro deste <div> inserir (div.col + TAB), que cria uma classe chamada col (coluna). dentro de ambos <div> (row e col) -> paste code.
-- entre <div row> e <div col> inserir o template tag for, pois para cada linha queremos renderizar um produto por coluna em um card.
-- dentro do <div card> temos <img src> sem atributo -> incluimos o image.url de cada produto.
-- dentro do <div card-body> temos <h5 card-title> -> substituimos Card title pelo nome de cada produto.
-- dentro do <div card-body> temos <p card-text> -> substituimos o texto pelo preço de cada produto.
-- dentro do <div card-body> temos <a btn btn-primary> -> substituimos o nome do botão para Add to Cart.
+11. `templates\index.html`: substituiremos [ul] e [li] por [div] para exibirmos os produtos em cards com imagens ao invés de bullet points.
+- entre [h1] e [ul] inserir (div.row + TAB), que cria uma classe chamada row (linha). dentro deste [div] inserir (div.col + TAB), que cria uma classe chamada col (coluna). dentro de ambos [div] (row e col) -> paste code.
+- entre [div row] e [div col] inserir o template tag for, pois para cada linha queremos renderizar um produto por coluna em um card.
+- dentro do [div card] temos [img src] sem atributo -> incluimos o image.url de cada produto.
+- dentro do [div card-body] temos [h5 card-title] -> substituimos Card title pelo nome de cada produto.
+- dentro do [div card-body] temos [p card-text] -> substituimos o texto pelo preço de cada produto.
+- dentro do [div card-body] temos [a btn btn-primary] -> substituimos o nome do botão para Add to Cart.
 12. `getbootstrap.com`: Docs -> Components (Navbar) -> Brand Text HTML -> copy apenas o código (As a link), para incluir uma barra de navegação no projeto.
-13. `templates\base.html`: colamos o código <nav> dentro da <head> tag do base.html, para que esta configuração seja aplicada a todas as páginas do projeto e alteramos o nome na barra de navegação <a navbar-brand> para PyShop.
+13. `templates\base.html`: colamos o código [nav] dentro da [head] tag do base.html, para que esta configuração seja aplicada a todas as páginas do projeto e alteramos o nome na barra de navegação [a navbar-brand] para PyShop.
 14. o arquivo base.html encontra-se dentro de `products\templates`, porém, por possuir as configurações básicas para todas as páginas do projeto, devemos tirá-lo do app products e mover para um diretório template na raiz (root) do projeto.
 15. `PYTHONDJANGO` (project root): Botão Direito + New + Directory (templates) -> mover base.html para este diretório através de drag and drop.
 com essa modificação, o Django não consegue encontrar o template base.html, pois ele procura apenas dentro dos apps instalados. para resolver isto, temos que pedir para ele pesquisar também na pasta templates (que até o momento é somente uma pasta).
