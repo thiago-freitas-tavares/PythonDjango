@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('new/', views.new)
+    path('new', views.new)
 ]
 
 # 4. import path e views - da própria pasta products - para referenciar as URLs

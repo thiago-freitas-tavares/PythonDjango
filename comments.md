@@ -6,6 +6,8 @@
 - Ambiente Virtual com o Django instalado evita a sua instalação num ambiente Python global.
 - o que proporciona controle sobre as bibliotecas utilizadas no app e facilita a criação de um arquivo requirements.txt para o ambiente.
 
+`C:\Users\Xis\OneDrive\Documentos\VSCodeProjects\PythonDjango\venv\scripts\activate`
+
 # Criando Ambiente Virtual e Projeto
 
 01. Windows Command Prompt: `cd C:\Users\Xis\OneDrive\Documentos\VSCodeProjects\PythonDjango` (referencia a pasta do projeto).
